@@ -1,5 +1,11 @@
 <!--
 *        shortcut to type HTML --- shift+1
+
+
+Using HTML, Bootstrap, and JavaScript create a single page website that contains the following:
+A Bootstrap styled table representing your choice of data.
+A Bootstrap styled form that allows a user to add a new row to the table when clicking on submit.
+
 -->
 
 <!DOCTYPE html>
@@ -7,9 +13,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <title>Week10</title>
 </head>
 <body>
-    
+
+    <table class="table table-dark">
+        <thead>
+            <th>#</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Message</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>jyoti</td>
+                <td>jyoti@abc.com</td>
+                <td>Message</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <form>
+        <div >
+            <label for="nameFormControl" >Name<span class="validate-color">*</span></label>
+        </div>
+        <div >
+            <input type="text"  id="nameFormControl">
+        </div>
+        <div >
+            <label for="emailFormControl" >Email<span class="validate-color">*</span></label>
+        </div>
+        <div >
+            <input type="email"  id="emailFormControl">
+        </div>
+        <div>
+
+            <label for="phoneFormControl" >Phone Number <span class="validate-color">*</span></label>
+
+        </div>
+        <div >
+
+            <input type="tel"  id="phoneFormControl">
+
+        </div>
+        <div >
+
+            <label for="messageFormControl">Message</label>
+
+        </div>
+        <div >
+
+            <div class="form-floating">
+                <textarea  id="messageFormControl" placeholder="Leave a comment here"
+                    id="floatingTextarea2" style="height: 70px"></textarea>
+
+            </div>
+
+
+
+        </div>
+
+        <div>
+            <button type="button">Send</button>
+
+        </div>
+
+    </form>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js" ></script>
 </body>
 </html>
