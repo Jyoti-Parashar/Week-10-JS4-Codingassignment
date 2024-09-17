@@ -1,10 +1,35 @@
 /**
+ * 
+ * 
+ * 
+ *  
+<div id="p-div"></div>
+<input id="p-input" type="text" placeholder="New Paragraph">
+<button id="p-button">Create</button>
+********************
+ let paragraphId=0;
+document.getElementById("p-button").addEventListener('click',()=>{
+let parent=document.getElementById("p-div");
+
+let newElement=document.createElement('p');
+newElement.textContent=document.getElementById("p-input").value;
+newElement.setAttribute('id', paragraphId++);
+parent.appendChild(newElement);
+document.getElementById("p-input").value='';
+});
+ * 
+ */
+
+
+
+
+
+/**
  *  Using HTML, Bootstrap, and JavaScript create a single page website that contains the following:
     A Bootstrap styled table representing your choice of data.
     A Bootstrap styled form that allows a user to add a new row to the table when clicking on submit.
  * 
  */
-
 
 
 
