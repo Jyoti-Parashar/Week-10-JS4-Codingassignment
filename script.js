@@ -36,17 +36,18 @@ document.getElementById("p-input").value='';
 // get button by Id
 const btnsubmit = document.getElementById("btnsubmit");
 
-let nameControl = document.getElementById("nameFormControl").value;
-let emailControl = document.getElementById("emailFormControl").value;
-let phoneControl = document.getElementById("phoneFormControl").value;
-let messageControl = document.getElementById("messageFormControl").value;
 
+let number=1;
 // add event listner
 
 btnsubmit.addEventListener('click',()=>{
 
 
-let number=1;
+
+let nameControl = document.getElementById("nameFormControl").value;
+let emailControl = document.getElementById("emailFormControl").value;
+let phoneControl = document.getElementById("phoneFormControl").value;
+let messageControl = document.getElementById("messageFormControl").value;
 
 
 //console.log(nameControl);
@@ -90,7 +91,7 @@ console.log(newTableRow);
 // add  child to the parent row 
 document.getElementById('tBody').appendChild(newTableRow);
 
-//empty all form controls
+//empty all form control;
  document.getElementById("nameFormControl").value='';
  document.getElementById("emailFormControl").value='';
  document.getElementById("phoneFormControl").value='';
